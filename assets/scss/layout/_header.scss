@@ -9,6 +9,19 @@ header {
     font-family: var.$Nunito;
     font-size: var.$desktop-body1;
 
+    .header_desktop, .header_mobile {
+        transition: .3s ease;
+    }
+
+    &.hidden {
+        .header_desktop {
+            transform: translateY(-100%);
+        }
+        .header_mobile {
+            transform: translateY(-100%);
+        }
+    }
+
     .header_mobile {
         display: none;
         position: fixed;

@@ -479,6 +479,15 @@ header {
   font-family: "NunitoSans";
   font-size: 20px;
 }
+header .header_desktop, header .header_mobile {
+  transition: 0.3s ease;
+}
+header.hidden .header_desktop {
+  transform: translateY(-100%);
+}
+header.hidden .header_mobile {
+  transform: translateY(-100%);
+}
 header .header_mobile {
   display: none;
   position: fixed;
