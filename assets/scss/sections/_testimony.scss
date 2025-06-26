@@ -1,0 +1,47 @@
+@use "../abstract/mixin";
+@use "../abstract/variables" as var;
+
+.testimony {
+    @include mixin.flex;
+    font-size: var.$desktop-body1;
+    padding: 40px 20px;
+
+    .swiper, .swiper-parent {
+        @include mixin.flex(column, center, center);
+        gap: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper {
+        position: relative;
+        padding-bottom: 40px;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .swiper-slide-content {
+        @include mixin.flex(column, center, center);
+
+        .img_wrapper {
+            width: 10%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+
+            }
+        }
+
+        .comment {
+            width: 50%;
+            text-align: center;
+        }
+    }
+}

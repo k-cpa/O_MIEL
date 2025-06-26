@@ -1,0 +1,132 @@
+@use "../abstract/mixin";
+@use "../abstract/variables" as var;
+
+.honey {
+    @include mixin.flex(column, center, center);
+    padding: 40px 20px;
+    background-color: var.$section;
+
+    .title {
+        align-self: flex-start;
+    }
+
+    .miel_container {
+        @include mixin.flex;
+        position: relative;
+
+        .h3_pointer {
+            @include mixin.flex;
+            position: relative;
+
+            span {
+                font-size: 40px;
+                transition: .2s ease;
+            }
+
+        }
+
+        .info {
+            position: absolute;
+            width: 200px;
+            cursor: pointer;
+            
+            h3 {
+                font-size: var.$desktop-h4;
+                font-family: var.$Cormorant;
+            }
+
+            p {
+                overflow: hidden;
+                opacity: 0;
+                font-size: var.$desktop-link;
+                font-family: var.$Nunito;
+                transition: .4s ease;
+            }
+
+            &:hover p {
+                opacity: 1;
+            }
+            &:hover span {
+                transform: rotate(180deg);
+            }
+
+        }
+
+        // Positionnement des textes
+        .top_left    {top: 10%; left: -250px; }
+        .bottom_left { bottom: 5%; left: -200px; }
+        .top_right   { top: 5%; right: -250px; }
+        .middle_right { top: 40%; right: -280px; }
+        .bottom_right { bottom: 5%; right: -250px; }
+
+        // Positionnement des lignes schématiques par rapport au h3 uniquement pour éviter le décalage à l'ouverture du p
+        .top_left .h3_pointer::before {
+            
+            content: "";
+            position: absolute;
+            width: 80px; // adapte selon la position
+            height: 1px;
+            background-color: black;
+            top: 150%; // ajuste en fonction du h3
+            left: 100%; // la ligne part vers la gauche
+            transform-origin: right center;
+            transform: rotate(25deg);
+        }
+
+        .top_right .h3_pointer::before {
+
+            content: "";
+            position: absolute;
+            width: 80px; // adapte selon la position
+            height: 1px;
+            background-color: black;
+            top: 100%; // ajuste en fonction du h3
+            right: 115%; // la ligne part vers la gauche
+            transform-origin: right center;
+            transform: rotate(-25deg);
+        }
+        .middle_right .h3_pointer::before {
+
+            content: "";
+            position: absolute;
+            width: 90px; // adapte selon la position
+            height: 1px;
+            background-color: black;
+            top: 60%; // ajuste en fonction du h3
+            right: 115%; // la ligne part vers la gauche
+        }
+
+        .bottom_right .h3_pointer::before {
+
+            content: "";
+            position: absolute;
+            width: 90px; // adapte selon la position
+            height: 1px;
+            background-color: black;
+            top: 10%; // ajuste en fonction du h3
+            right: 115%; // la ligne part vers la gauche
+            transform-origin: right center;
+            transform: rotate(25deg);
+        }
+        .bottom_left .h3_pointer::before {
+
+            content: "";
+            position: absolute;
+            width: 90px; // adapte selon la position
+            height: 1px;
+            background-color: black;
+            top: -70%; // ajuste en fonction du h3
+            left: 80%; // la ligne part vers la gauche
+            transform-origin: right center;
+            transform: rotate(-25deg);
+        }
+    }
+
+    .cta {
+        background-color: var.$sectionLight;
+
+        &:hover {
+            background-color: var.$section;
+        }
+    }
+}

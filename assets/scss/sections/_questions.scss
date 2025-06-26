@@ -1,0 +1,66 @@
+@use "../abstract/mixin";
+@use "../abstract/variables" as var;
+
+.questions {
+    @include mixin.flex;
+    padding: 40px 20px;
+    min-height: 600px;
+    background-color: var.$mainDark;
+    color: var.$sectionLight;
+
+    .title {
+        align-self: flex-start;
+        margin-bottom: 20px;
+        
+        h2 {
+            font-family: var.$Cormorant;
+        }
+    }
+
+    .question {
+        margin-top: 40px;
+        @include mixin.flex(column, center, flex-start);
+
+        h3 {
+            font-family: var.$Cormorant;
+            font-size: var.$desktop-h3;
+        }
+
+        .h2_pointer {
+            @include mixin.flex($justify: space-between);
+            width: 100%;
+            cursor: pointer;
+            transition: .3s ease;
+
+            &:hover span {
+                color: var.$accent;
+            }
+
+            span {
+                font-size: 50px;
+                transition: .2s ease;
+            }
+
+            &.active + .answer {
+                opacity: 1;
+                max-height: 500px;
+            }
+
+            &.active span {
+                transform: rotate(180deg);
+                color: var.$accent;
+            }
+
+        }
+
+        .answer {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            font-size: var.$desktop-body1;
+            font-family: var.$Nunito;
+            width: 80%;
+            transition: .4s ease;
+        }
+    }
+}

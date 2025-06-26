@@ -4,9 +4,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/scss/style.css">
+    <!-- Icones matérial icons de google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- fontawesome pour les logos socials -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- swiper.js -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <title>Ô Miel</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header_desktop">
+            <div class="logo_wrapper">
+                <a href="#hero">
+                    <img src="assets/img/Logo.png" alt="Logo de la société Ô miel - producteur de miel de provence artisanal">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#history">Notre histoire</a></li>
+                    <li><a href="#honey">Le miel</a></li>
+                    <li><a href="#testimony">Témoignages</a></li>
+                    <li><a href="#questions">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_mobile">
+            <div class="logo_wrapper">
+                <a href="">
+                    <img src="assets/img/Logo.png" alt="Logo de la société Ô miel - producteur de miel de provence artisanal">
+                </a>
+            </div>
+            <div class="off_screen_menu">
+                    <div class="logo_wrapper">
+                        <a href="">
+                            <img src="assets/img/Logo.png" alt="Logo de la société Ô miel - producteur de miel de provence artisanal">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Notre histoire</a></li>
+                            <li><a href="">Le miel</a></li>
+                            <li><a href="">Témoignages</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>     
+            <div class="burger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section id="hero" class="hero_banner">
+        <div class="title">
+            <h1>Ô Miel,</h1>
+            <h2>La provence vous veut du bien</h2>
+        </div>
+    </section>
+    <section id="history" class="history">
+        <div class="max-w-site">
+            <article class="roots">
+                <div class="title"><h3>Racines Provençales</h3></div>
+                <div class="text_img">
+                    <div class="text">
+                        <p>
+                            <span>Depuis 1970, une passion familiale au cœur de Fleurs de Peau, en Provence.</span>
+
+                            <span>Dans cette région baignée de soleil, où la lavande embaume les champs, 
+                            chaque fleur donne naissance à une douceur unique. 
+                            La famille Ô Miel perpétue un savoir-faire apicole respectueux des abeilles et de la nature, 
+                            au rythme des saisons provençales.</span>
+
+                            <span>Ce lien intime entre les fleurs de Provence et le miel se 
+                            retrouve dans la pureté et la richesse de chaque récolte.</span>
+                        </p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="assets/img/beekeeper.svg" alt="Image d'un apiculteur artisanal de miel de lavande en train de montrer à un enfant les gestes à reproduire">
+                    </div>
+                </div>
+            </article>
+            <article class="environment">
+                <div class="title"><h3>L'environnement des abeilles</h3></div>
+                <div class="text_img">
+                    <div class="text">
+                        <p>
+                            <span>Les abeilles vivent dans un environnement naturel protégé, loin des zones polluées, au cœur des champs de lavande de Provence. 
+                            Cette fleur emblématique parfume délicatement notre miel.</span>
+
+                            <span>Ce cadre authentique est vital pour leur bien-être et leur rôle dans la pollinisation. 
+                                La famille Ô Miel veille à offrir à chaque ruche un habitat équilibré, 
+                                garantissant un miel pur et respectueux de la nature.</span>
+                        </p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="assets/img/bee.svg" alt="Image d'une abeille en train de butiner de la lavande">
+                    </div>
+                </div>
+            </article>
+            <article class="label">
+                <div class="title"><h3>Engagement écoresponsable et local</h3></div>
+                <div class="text_img">
+                    <div class="text">
+                        <p>
+                            Ô Miel est fier d’être labellisé IGP et Label Rouge, gages de qualité et d’authenticité. 
+                            Engagés localement, nous cultivons un savoir-faire respectueux de l’environnement, 
+                            pour un miel éco-responsable et durable.
+                        </p>
+                    </div>
+                    <div class="img_wrapper">
+                        <img src="assets/img/IGP-LABEL.svg" alt="Logos label rouge et Indication géographique protégée">
+                    </div>
+                </div>
+            </article>
+            <div class="cta">
+                <a href="">Goûtez la provence</a>
+            </div>
+        </div>
+    </section>
+    <div class="lavender_bg">
+        <!-- Invisible on veut juste keep le alt -> l'image visible est un background image  -->
+          <img src="assets/img/lavender-scroll.jpg" alt="Champ de lavande en Provence, symbole de l'artisanat local et du miel éco-responsable Ô Miel" class="visually_hidden">
+    </div>
+    <section id="honey" class="honey">
+        <div class="max-w-site">
+            <div class="title">
+                <h2>Notre miel</h2>
+            </div>
+            <div class="miel_container">
+                <div class="img_wrapper">
+                    <img src="assets/img/miel.svg" alt="Pot de miel artisanal de Provence produit localement par Ô Miel">
+                </div>
+                <div class="info top_left">
+                    <div class="h3_pointer">
+                        <h3>Origine locale garantie</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p>récolté au coeur de la Provence, dans un environnement préservé </p>
+                </div>
+                <div class="info top_right">
+                    <div class="h3_pointer">
+                        <h3>Pureté et authenticité</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p>sans additifs ni conservateurs</p>
+                </div>
+                <div class="info middle_right">
+                    <div class="h3_pointer">
+                        <h3>Terroir préservé</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p>Récolté dans des ruches où les abeilles évoluent en harmonie avec la nature garantissant leur bien-être et la biodiversité</p>
+                </div>
+                <div class="info bottom_right">
+                    <div class="h3_pointer">
+                        <h3>Profil gustatif équilibré</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p>Un goût doux et sucré, rehaussé de notes florales fraîches et d’une légère pointe herbacée, pour une longueur en bouche persistante et raffinée.</p>
+                </div>
+                <div class="info bottom_left">
+                    <div class="h3_pointer">
+                        <h3>Texture et couleur typiques</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p>Miel cristallisé à la texture fine et onctueuse, sa couleur dorée claire évoque la lumière et la chaleur de la Provence.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta">
+            <a href="">Goûtez la provence</a>
+        </div>
+    </section>
+    <section id="testimony" class="testimony">
+        <div class="max-w-site">
+            <div class="swiper-parent">
+                <div class="swiper">
+                    <div class="swiper-wrapper" data-max-slide="1">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/john.svg" alt="Photo d'un client du producteur de miel de lavande Ô Miel">
+                                </div>
+                                <div class="name">
+                                    <p>John Doe</p>
+                                </div>
+                                <div class="comment">
+                                    <p>« Le miel Ô Miel est un vrai délice ! 
+                                        Sa saveur authentique et sa texture onctueuse reflètent parfaitement la richesse de la Provence. 
+                                        Je ne peux plus m’en passer ! »</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content">
+                                <div class="img_wrapper">
+                                    <img src="assets/img/johnna.svg" alt="Photo d'un client du producteur de miel de lavande Ô Miel">
+                                </div>
+                                <div class="name">
+                                    <p>Johnna Doe</p>
+                                </div>
+                                <div class="comment">
+                                    <p>« Un pur bonheur ! Le miel Ô Miel m’a rappelé les souvenirs d’enfance chez mes grands-parents en Provence. 
+                                        Goût subtil, parfum floral… c’est devenu un indispensable à la maison. »</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Navigation slider -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="questions" class="questions">
+        <div class="max-w-site">
+            <div class="title">
+                <h2>Foire aux Questions</h2>
+            </div>
+            <div class="questions_container">
+                <div class="question">
+                    <div class="h2_pointer">
+                        <h3>1. Quel type de miel proposez-vous ?</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p class="answer">Ô Miel propose exclusivement du miel de lavande récolté en Provence, reconnu pour son goût délicat, floral et sa texture onctueuse.</p>
+                </div>
+                <div class="question">
+                    <div class="h2_pointer">
+                        <h3>2. Pourquoi mon miel devient-il granuleux ?</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p class="answer">C’est un phénomène naturel appelé cristallisation. Cela prouve la qualité du miel. Pour le liquéfier, chauffez-le doucement au bain-marie (jamais au micro-ondes).</p>
+                </div>
+                <div class="question">
+                    <div class="h2_pointer">
+                        <h3>4. Puis-je donner votre miel à un enfant ?</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p class="answer">Le miel est déconseillé aux enfants de moins de 1 an. Au-delà, il peut être consommé sans souci.</p>
+                </div>
+                <div class="question">
+                    <div class="h2_pointer">
+                        <h3>5. Comment conserver le miel ?</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p class="answer">Conservez-le à température ambiante, à l’abri de la lumière et de l’humidité. Inutile de le réfrigérer.</p>
+                </div>
+                <div class="question">
+                    <div class="h2_pointer">
+                        <h3>6. Votre production est-elle respectueuse des abeilles ?</h3>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <p class="answer">Oui, nous pratiquons une apiculture artisanale et durable, sans transhumance intensive, dans le respect total des abeilles et de leur cycle naturel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo_wrapper">
+            <a href="#hero">
+                <img src="assets/img/Logo.png" alt="Logo de la société Ô miel. Producteur de miel de lavande artisanal en Provence">
+            </a>
+        </div>
+        <div class="links">
+            <div class="mentions">
+                <a href="">mentions légales</a>
+            </div>
+            <div class="contact">
+                <a href="mailto:contact@o-miel.com?subject=Demande%20d'information&body=Bonjour,"">nous contacter</a>
+            </div>
+            <div class="social_links">
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

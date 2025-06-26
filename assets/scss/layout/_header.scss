@@ -1,0 +1,50 @@
+@use "../abstract/mixin";
+@use "../abstract/variables" as var;
+
+header {
+    @include mixin.flex;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    font-family: var.$Nunito;
+    font-size: var.$desktop-body1;
+
+    .header_mobile {
+        display: none;
+    }
+
+    .header_desktop {
+        width: 100%;
+        @include mixin.flex($justify: space-between);
+        padding: 20px 30px;
+
+        nav {
+            @include mixin.flex;
+            
+            ul {
+                @include mixin.flex;
+                gap: 20px;
+
+                a {
+                    color: var.$text;
+                    transition: .3s ease;
+
+                    &:hover {
+                        color: var.$accent;
+                    }
+                }
+            }
+        }
+
+        .logo_wrapper {
+            position: relative;
+            width: 60px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+

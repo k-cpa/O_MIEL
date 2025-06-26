@@ -1,0 +1,44 @@
+@use "../abstract/mixin";
+@use "../abstract/variables" as var;
+
+footer {
+    @include mixin.flex($justify: space-between);
+    padding: 40px 70px;
+
+    .logo_wrapper {
+        width: 5%;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .links {
+        @include mixin.flex;
+        gap: 10px;
+        
+        a {
+            color: var.$text;
+            transition: .3s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: var.$accent;
+            }
+        }
+
+        .social_links {
+            @include mixin.flex;
+            gap: 20px;
+            font-size: 30px;
+            padding-left: 10px;
+        }
+    }
+
+    .mentions, .contact {
+        border-right: 1px solid var.$text;
+        padding-right: 10px;
+    }
+}
