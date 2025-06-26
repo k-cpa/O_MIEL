@@ -130,3 +130,57 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .honey {
+
+        .miel_container {
+            @include mixin.flex(column, center, center);
+            gap: 20px;
+
+            .img_wrapper {
+                @include mixin.flex;
+                width: 100%;
+                img {
+                    width: 60%;
+                }
+            }
+            .info {
+                position: static;
+
+                .h3_pointer {
+                    justify-content: space-between;
+                }
+
+                h3 {
+                    font-size: var.$mobile-h4;
+                }
+
+                p {
+                    max-height: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    transition: .4s ease;
+                }
+
+                &.active p {
+                    max-height: 200px;
+                    opacity: 1;
+                }
+
+                &:hover span {
+                    transform: none;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 50px;
+                }
+
+            }
+
+            .h3_pointer::before {
+                display: none;
+            }
+        }
+    }
+}

@@ -42,3 +42,28 @@ footer {
         padding-right: 10px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        @include mixin.flex(column, center, center);
+
+        .logo_wrapper {
+            width: 15%;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            @include mixin.flex(column, center, center);
+        }
+
+        .mentions, .contact {
+            border-right: none;
+            padding-right: 0;
+            padding-bottom: 20px;
+        }
+
+        .social_links {
+            padding-left: 0;
+        }
+    }
+} 

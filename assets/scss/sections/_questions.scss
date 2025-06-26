@@ -64,3 +64,19 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .questions {
+
+        .question {
+
+            h3 {
+                font-size: var.$mobile-h3;
+            }
+
+            .answer {
+                font-size: var.$mobile-body1;
+            }
+        }
+    }
+}

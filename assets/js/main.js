@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
         const swiperConfig = {
             slidesPerView: 1,
             initialSlide: 0,
-            spaceBetween: 5,
+            spaceBetween: 0,
             loop: true,
             watchOverflow: true,
 
@@ -119,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// toggle pour la FAQ
 document.addEventListener('DOMContentLoaded', () => {
   const toggles = document.querySelectorAll('.h2_pointer');
 
@@ -127,4 +128,43 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.classList.toggle('active');
     })
   })
+
+    // Gestion burger menu header pour mobile et pour desktop
+    const hamMenu = document.querySelector('.burger_menu');
+    const offScreenMenu = document.querySelector('.off_screen_menu');
+
+    if(hamMenu) {
+        hamMenu.addEventListener('click', () => {
+            hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+        })
+
+            // fermer le off screen menu au click sur la nav
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+          link.addEventListener('click', () => {
+            hamMenu.classList.remove('active');
+            offScreenMenu.classList.remove('active');
+          })
+        })
+    }
+
+    // Toggle pour le miel en mobile on va click pour faire apparaître les textes 
+    if (window.innerWidth < 1000) {
+      document.querySelectorAll('.info').forEach((element) => {
+        element.addEventListener('click', () => {
+          const p = element.querySelector('p');
+          const arrow = element.querySelector('span')
+
+          if (p.style.opacity === '1') {
+            p.style.opacity = '0';
+            p.style.maxHeight = '0';
+            arrow.style.transform = 'rotate(0deg)'
+          } else {
+            p.style.opacity = '1';
+            p.style.maxHeight = p.scrollHeight + 'px';
+            arrow.style.transform = 'rotate(180deg)'
+          }
+        });
+      });
+    }
 })

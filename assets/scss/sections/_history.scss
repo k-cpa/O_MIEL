@@ -37,6 +37,7 @@
         font-weight: bold;
         font-size: var.$desktop-h3;
         align-self: flex-start;
+        margin-bottom: 20px;
     }
 
     .img_wrapper {
@@ -59,7 +60,10 @@
 
         span {
             display: block;
-            margin-top: 20px;
+            
+            &:not(:first-of-type) {
+                margin-top: 20px;
+            }
         }
     }
 }
@@ -87,3 +91,37 @@
     .test {
         height: 800px;
     }
+
+@media screen and (max-width: 768px) {
+  .history {
+
+    text-align: center;
+
+    .title {
+        align-self: center;
+        font-size: var.$mobile-h3;
+    }
+
+    .text {
+        font-size: var.$mobile-body1;
+        width: 90%;
+    }
+
+    article:not(:nth-child(2)) {
+      .text_img {
+        @include mixin.flex(column, center, center);
+      }
+    }
+
+    article:nth-child(2) {
+      .text_img {
+        @include mixin.flex(column, center, center);
+      }
+
+      .title {
+        align-self: center;
+      }
+    }
+
+  }
+}

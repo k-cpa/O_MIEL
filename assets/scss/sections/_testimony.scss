@@ -16,6 +16,7 @@
     .swiper {
         position: relative;
         padding-bottom: 40px;
+        overflow: hidden;
     }
 
     .swiper-pagination {
@@ -27,6 +28,9 @@
 
     .swiper-slide-content {
         @include mixin.flex(column, center, center);
+        font-family: var.$Nunito;
+        width: 100%;
+        font-size: var.$desktop-body1;
 
         .img_wrapper {
             width: 10%;
@@ -42,6 +46,23 @@
         .comment {
             width: 50%;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimony {
+
+        .swiper-slide-content {
+            font-size: var.$mobile-body1;
+
+            .comment {
+                width: 30%;
+            }
+
+            .img_wrapper {
+                width: 5%;
+            }
         }
     }
 }

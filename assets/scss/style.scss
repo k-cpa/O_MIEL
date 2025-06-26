@@ -21,6 +21,7 @@ html {
 body {
     background-color: var.$sectionLight;
     z-index: 0;
+    color: var.$text;
     position: relative;
 
     h1 {
@@ -62,5 +63,17 @@ body {
         color: var.$text;
         font-family: var.$Nunito;
         font-size: var.$desktop-button;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        h1 {
+            font-size: var.$mobile-h1;
+        }
+
+        h2 {
+            font-size: var.$mobile-h2;
+        }
     }
 }
