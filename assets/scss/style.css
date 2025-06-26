@@ -94,7 +94,7 @@
 }
 .history .text {
   width: 100%;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
   font-size: 20px;
 }
 .history .text span {
@@ -198,7 +198,7 @@
   opacity: 0;
   margin-top: 5px;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
   transition: 0.4s ease;
 }
 .honey .miel_container .info:hover p {
@@ -388,7 +388,7 @@
   overflow: hidden;
   font-size: 20px;
   margin-top: 10px;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
   width: 80%;
   transition: 0.4s ease;
 }
@@ -438,7 +438,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
   width: 100%;
   font-size: 20px;
 }
@@ -476,7 +476,7 @@ header {
   position: fixed;
   width: 100vw;
   z-index: 9999;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
   font-size: 20px;
 }
 header .header_mobile {
@@ -574,7 +574,7 @@ header .header_mobile nav ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
   font-size: 24px;
   gap: 20px;
 }
@@ -709,7 +709,7 @@ footer .mentions, footer .contact {
 }
 @font-face {
   font-family: "NunitoSans";
-  src: url("../../font/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
+  src: url("../font/NunitoSans-VariableFont_YTLC-opsz-wdth-wght.ttf");
   font-weight: 200 800;
   font-style: normal;
 }
@@ -737,7 +737,7 @@ body h1 {
 }
 body h2 {
   font-size: 36px;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
 }
 body .max-w-site {
   max-width: 1440px;
@@ -769,7 +769,7 @@ body .max-w-site {
 }
 .cta a {
   color: #333333;
-  font-family: "Nunito";
+  font-family: "NunitoSans";
   font-size: 16px;
 }
 
