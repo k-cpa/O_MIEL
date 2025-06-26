@@ -15,3 +15,4 @@ Le SCSS est structuré comme suit :
 
 --------------------------------------------------------------------------------------------------------------
 
+- Rajouter le JS pour le header -> Besoin qu'il disparaisse au scroll bottom et revienne scroll up
