@@ -371,9 +371,6 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
-.questions .question .h2_pointer:hover span {
-  color: #CBAACB;
-}
 .questions .question .h2_pointer span {
   font-size: 50px;
   transition: 0.2s ease;
@@ -384,7 +381,6 @@
 }
 .questions .question .h2_pointer.active span {
   transform: rotate(180deg);
-  color: #CBAACB;
 }
 .questions .question .answer {
   opacity: 0;

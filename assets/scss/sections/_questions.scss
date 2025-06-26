@@ -32,10 +32,6 @@
             cursor: pointer;
             transition: .3s ease;
 
-            &:hover span {
-                color: var.$accent;
-            }
-
             span {
                 font-size: 50px;
                 transition: .2s ease;
@@ -48,7 +44,6 @@
 
             &.active span {
                 transform: rotate(180deg);
-                color: var.$accent;
             }
 
         }
