@@ -587,7 +587,7 @@ header .header_desktop {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 40px;
 }
 header .header_desktop nav {
   display: flex;
@@ -754,10 +754,9 @@ body .max-w-site {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  height: 30px;
+  height: 40px;
   background-color: #DCE7DC;
   border-radius: 3px;
-  margin-bottom: 40px;
   box-shadow: -0.5px 1px 5px rgba(0, 0, 0, 0.2);
   border: 1px solid #BABABA;
   transition: 0.3s ease;

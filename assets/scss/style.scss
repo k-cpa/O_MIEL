@@ -45,10 +45,9 @@ body {
     @include mixin.flex;
     padding-left: 20px;
     padding-right: 20px;
-    height: 30px;
+    height: 40px;
     background-color: var.$section;
     border-radius: 3px;
-    margin-bottom: 40px;
     box-shadow: -0.5px 1px 5px rgba(0, 0, 0, 0.20);
     border: 1px solid #BABABA;
     transition: .3s ease;

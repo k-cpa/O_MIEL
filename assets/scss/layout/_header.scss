@@ -130,7 +130,7 @@ header {
     .header_desktop {
         width: 100%;
         @include mixin.flex($justify: space-between);
-        padding: 20px;
+        padding: 20px 40px;
 
         nav {
             @include mixin.flex;
