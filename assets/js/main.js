@@ -74,10 +74,10 @@ window.addEventListener('scroll', () => {
                 clickable: true,
             },
 
-            // autoplay: {
-            //   delay: 8000,
-            //   disableOnInteraction: false,
-            // },
+            autoplay: {
+              delay: 8000,
+              disableOnInteraction: false,
+            },
 
             // Events
             on: {
