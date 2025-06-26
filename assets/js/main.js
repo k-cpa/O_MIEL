@@ -1,31 +1,4 @@
-// function adjustContentPadding() {
-//   const headerMobile = document.querySelector('.header_mobile');
-//   const headerDesktop = document.querySelector('.header_desktop');
-//   const content = document.querySelector('.hero_banner'); 
 
-//   let headerHeight = 0;
-
-//   // Fonction pour vérifier si un élément est visible (display != none)
-//   function isVisible(elem) {
-//     return !!elem && window.getComputedStyle(elem).display !== 'none';
-//   }
-
-//   if (isVisible(headerMobile)) {
-//     headerHeight = headerMobile.offsetHeight;
-//   } else if (isVisible(headerDesktop)) {
-//     headerHeight = headerDesktop.offsetHeight;
-//   }
-
-//   if (content) {
-//     content.style.paddingTop = `${headerHeight}px`;
-//   }
-// }
-
-// window.addEventListener('DOMContentLoaded', () => {
-//   adjustContentPadding();
-// });
-
-// window.addEventListener('resize', adjustContentPadding);
 
 const lavender = document.querySelector('.lavender_bg');
 const lavenderImg = lavender.querySelector('img');
@@ -183,4 +156,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       lastScroll = currentScroll <= 0 ? 0 : currentScroll
     })
+
+    // Initialisation d'AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
 })
