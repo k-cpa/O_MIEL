@@ -109,6 +109,7 @@
   height: 180px;
   background-image: url("../img/lavender-scroll.jpg");
   background-attachment: fixed;
+  background-position: center;
 }
 .lavender_bg .visually_hidden {
   position: absolute;
@@ -195,6 +196,7 @@
 .honey .miel_container .info p {
   overflow: hidden;
   opacity: 0;
+  margin-top: 5px;
   font-size: 14px;
   font-family: "Nunito";
   transition: 0.4s ease;
@@ -389,6 +391,7 @@
   max-height: 0;
   overflow: hidden;
   font-size: 20px;
+  margin-top: 10px;
   font-family: "Nunito";
   width: 80%;
   transition: 0.4s ease;
@@ -424,6 +427,9 @@
   padding-bottom: 40px;
   overflow: hidden;
 }
+.testimony .swiper-slide {
+  width: 100%;
+}
 .testimony .swiper-pagination {
   position: absolute;
   bottom: 0;
@@ -435,12 +441,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   font-family: "Nunito";
   width: 100%;
   font-size: 20px;
 }
 .testimony .swiper-slide-content .img_wrapper {
-  width: 10%;
+  width: 10Opx;
 }
 .testimony .swiper-slide-content .img_wrapper img {
   width: 100%;
@@ -448,8 +455,12 @@
      object-fit: cover;
   border-radius: 50%;
 }
+.testimony .swiper-slide-content .name {
+  font-weight: bold;
+  font-family: "Cormorant";
+}
 .testimony .swiper-slide-content .comment {
-  width: 50%;
+  max-width: 700px;
   text-align: center;
 }
 
@@ -457,11 +468,8 @@
   .testimony .swiper-slide-content {
     font-size: 18px;
   }
-  .testimony .swiper-slide-content .comment {
-    width: 30%;
-  }
   .testimony .swiper-slide-content .img_wrapper {
-    width: 5%;
+    width: 80px;
   }
 }
 header {
