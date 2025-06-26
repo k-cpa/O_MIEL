@@ -752,8 +752,8 @@ body .max-w-site {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 40px;
   background-color: #DCE7DC;
   border-radius: 3px;
