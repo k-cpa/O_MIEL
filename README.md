@@ -14,5 +14,3 @@ Le SCSS est structuré comme suit :
 - Un dossier sections dans lequel on a l'ensemble des sections de la landing page. 
 
 --------------------------------------------------------------------------------------------------------------
-
-- Rajouter le JS pour le header -> Besoin qu'il disparaisse au scroll bottom et revienne scroll up
